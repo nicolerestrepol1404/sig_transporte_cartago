@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIG Web · Transporte urbano de Cartago</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <aside id="panel">
+        <h1>SIG Web · Transporte de Cartago</h1>
+        <p id="estado" class="nota">Conectando con la API...</p>
+
+        <section>
+            <h2>Incidentes (F1)</h2>
+            <label for="filtro-tipo">Filtrar por tipo</label>
+            <select id="filtro-tipo"><option value="">Todos</option></select>
+        </section>
+
+        <section>
+            <h2>Incidentes cercanos a un punto (F3)</h2>
+            <label for="radio">Radio (m)</label>
+            <input type="number" id="radio" value="500" min="50" max="5000" step="50">
+            <button type="button" id="btn-cercanos">Elegir punto en el mapa</button>
+            <div id="res-cercanos"></div>
+        </section>
+
+        <section>
+            <h2>Resumen por ruta (F4)</h2>
+            <button type="button" id="btn-resumen">Calcular resumen</button>
+            <div id="res-resumen"></div>
+        </section>
+
+        <section>
+            <h2>Detalle de ruta (F2)</h2>
+            <div id="detalle"><p class="nota">Haz clic sobre una ruta del mapa.</p></div>
+        </section>
+    </aside>
+
+    <div id="mapa"></div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

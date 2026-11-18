@@ -1,0 +1,17 @@
+html, body { margin: 0; height: 100%; font-family: Arial, sans-serif; font-size: 14px; color: #2b2b2b; }
+body { display: grid; grid-template-columns: 360px 1fr; }
+#panel { padding: 14px 16px; overflow-y: auto; background: #F6F1E7; border-right: 4px solid #8B5E3C; }
+#mapa { height: 100%; }
+h1 { font-size: 1.2em; color: #1B3A5C; margin: 0 0 6px; }
+h2 { font-size: 1em; color: #1B3A5C; margin: 0 0 6px; }
+section { background: #fff; border-radius: 6px; border-top: 4px solid #3F7D3C; padding: 10px 12px; margin-bottom: 12px; }
+label { display: block; margin-bottom: 3px; font-weight: bold; }
+select, input { padding: 5px; margin-bottom: 6px; border: 1px solid #aaa; border-radius: 4px; }
+button { background: #3F7D3C; color: #fff; border: 0; border-radius: 5px; padding: 7px 12px; cursor: pointer; font-weight: bold; }
+button:hover { background: #2f6230; }
+table { width: 100%; border-collapse: collapse; margin-top: 6px; font-size: 0.9em; }
+th { background: #1B3A5C; color: #fff; padding: 4px; text-align: left; }
+td { padding: 4px; border-bottom: 1px solid #e5e5e5; }
+.nota { font-size: 0.85em; color: #555; margin: 4px 0; }
+.error { background: #fdeaea; border-left: 4px solid #b03030; color: #7a1f1f; padding: 6px 10px; border-radius: 4px; }
+@media (max-width: 800px) { body { grid-template-columns: 1fr; grid-template-rows: auto 70vh; } }
